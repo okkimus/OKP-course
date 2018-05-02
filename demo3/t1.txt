@@ -1,0 +1,14 @@
+let nimet = ["kalle", "jaakko", "olli", "saija", "hanna", "heidi"]
+let kurssipisteet = [12, 19, 6, 13, 17, 2 ]
+let kurssitiedot = zip nimet kurssipisteet
+let vitonen op = snd op > 15
+let hylky op = snd op < 5
+let nimi op = fst op
+
+let vitosenOpt = filter vitonen kurssitiedot
+let hylkyOpt = filter hylky kurssitiedot
+
+let vitosenNimet = map nimi vitosenOpt
+let hylkyNimet = map nimi hylkyOpt
+
+
